@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".ui.pendaftaran.SwafotoPetunjukActivity">
+
+    <View
+        android:id="@+id/bg_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_top_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/btn_yellow_r15"
+        android:src="@drawable/ic_back_red"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Upload Swafoto KTP"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutFoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_top">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Upload foto Selfie dengan KTP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageSwaFoto"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/bg_solid_gray_r8"
+            android:src="@drawable/ic_img_swafoto_petunjuk" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutUpload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFoto">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_baseline_check_circle"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="@color/green"
+            android:gravity="center_vertical"
+            android:text="Wajah harus terlihat dengan jelas"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_check_circle"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableTint="@color/green"
+            android:gravity="center_vertical"
+            android:text="Hanya ada Anda dalam foto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_baseline_check_circle"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableTint="@color/green"
+            android:gravity="center_vertical"
+            android:text="Hindari cahaya berlebihan pada foto Anda"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_check_circle"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableTint="@color/green"
+            android:gravity="center_vertical"
+            android:text="Dokumen jangan terlalu dekat dengan wajah Anda"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutReview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFoto">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/informasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Mohon cek kembali hasil Swafoto kamu Foto dengan kualitas jelek akan berdampak pada proses verifikasi data yang lama atau akan di Tolak oleh Tim"
+            android:textColor="@color/abuabu"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRetake"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/btn_purple_r15"
+                android:drawableStart="@drawable/ic_camera"
+                android:text="Retake"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSelanjutnya"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/btn_purple_r15"
+                android:text="Selanjutnya"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUploadFoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_30ssp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:background="@drawable/btn_purple_r10"
+        android:text="Upload Foto"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/bottom_background_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

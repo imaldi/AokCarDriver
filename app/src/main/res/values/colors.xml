@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Default Color  -->
+    <color name="primary_color">#FF763EDF</color>
+    <color name="main_bg">#142445</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#1A2226</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!--  Mr Driver Color  -->
+    <color name="magenta">#FF763EDF</color>
+    <color name="lightshimmer">#F5F5F5</color>
+    <color name="darkshimmer">#E8E8E8</color>
+    <color name="black">#1A2226</color>
+    <color name="red">#D80147</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#F5FF00</color>
+    <color name="yellow_dark">#FFCC00</color>
+    <color name="gray">#F5F5F5</color>
+    <color name="krem">#FDFFCD</color>
+    <color name="abuabu">#C4C4C4</color>
+    <color name="darkgray">#919191</color>
+    <color name="green">#4CAF50</color>
+    <color name="maroon">#B6063F</color>
+    <color name="transparentBlack">#B4000000</color>
+</resources>

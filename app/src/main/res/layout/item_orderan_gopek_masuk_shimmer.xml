@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/lightshimmer"
+    android:padding="@dimen/_12sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNama"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@color/darkshimmer"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKodePesanan"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewKodePesanan"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:background="@color/darkshimmer"
+        android:padding="@dimen/_3sdp"
+        android:textSize="@dimen/_7ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPoint"
+        app:layout_constraintStart_toStartOf="@+id/textViewNama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNama" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPoint"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkshimmer"
+        android:textSize="@dimen/_5ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/textViewNama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKodePesanan" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/darkshimmer"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/darkshimmer"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5">
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView6"
+        android:layout_width="@dimen/_18ssp"
+        android:layout_height="@dimen/_18ssp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView11"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat4"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView9"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/darkshimmer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView10"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkshimmer"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView11"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@color/darkshimmer"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView10" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView7"
+        android:layout_width="@dimen/_18ssp"
+        android:layout_height="@dimen/_18ssp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView14"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat4"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView12"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/darkshimmer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView11"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView11" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView13"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkshimmer"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView12"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView14"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkshimmer"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView13" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView7"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView7"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView6" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView14" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textVie17"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/darkshimmer"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkshimmer"
+        app:layout_constraintEnd_toEndOf="@+id/divider7"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/textVie17" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/darkshimmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

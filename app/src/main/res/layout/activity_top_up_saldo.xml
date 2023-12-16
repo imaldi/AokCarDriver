@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".ui.topup.TopUpSaldoActivity">
+
+    <View
+        android:id="@+id/bg_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_top_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/bg_white_r10"
+        android:paddingStart="@dimen/_8sdp"
+        android:src="@drawable/ic_baseline_arrow_back_ios"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/topUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:text="Top Up "
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_solid_yellow_r4"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toStartOf="@+id/saldoText"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/saldoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Saldo"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/topUpText"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/btn_black_r4"
+        android:src="@drawable/ic_baseline_add"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/bg_solid_purple_r8"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_top">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView7"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView26"
+            app:srcCompat="@drawable/ic_dompet" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView26"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/kata_kata_top_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView27"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="*Jangan sampai saldo kamu kosong ya, Supaya kamu bisa terus bertransaksi di aplikasi kami.Minimal top up Rp 10.000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Input Nominal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextNominal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/bg_outline_whitepurple_r8"
+            android:ems="10"
+            android:hint="Rp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/darkgray"
+            android:inputType="number"
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Pilih Nominal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNominal" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/bg_outline_whitedarkpurple_r8"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toStartOf="@id/linear50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/meneytop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp10.000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_outline_whitedarkpurple_r8"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toStartOf="@id/linear100"
+            app:layout_constraintStart_toEndOf="@id/linear10"
+            app:layout_constraintTop_toTopOf="@+id/linear10">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/meneytop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp50.000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear100"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/bg_outline_whitedarkpurple_r8"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toStartOf="@id/linear200"
+            app:layout_constraintStart_toEndOf="@+id/linear50"
+            app:layout_constraintTop_toTopOf="@+id/linear10">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/meneytop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp100.000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear200"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_outline_whitedarkpurple_r8"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linear100"
+            app:layout_constraintTop_toTopOf="@+id/linear10">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/meneytop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp200.000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSelanjutnya"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/rb_purple_r15"
+        android:text="Selanjutnya"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

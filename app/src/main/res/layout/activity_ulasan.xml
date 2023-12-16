@@ -1,0 +1,378 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ulasan.UlasanActivity">
+
+    <View
+        android:id="@+id/bg_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_top_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/btn_white_r15"
+        android:src="@drawable/ic_back_red"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Ulasan Produk"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearKiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_top">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_bg"
+                android:textSize="@dimen/_32ssp"
+                android:textStyle="bold"
+                tools:text="4.8" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/5"
+                android:textColor="@color/main_bg"
+                android:textSize="@dimen/_24ssp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingAll"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:numStars="5"
+            android:theme="@style/RatingBar"
+            android:rating="1"
+            android:stepSize="0.5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textUlasanAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150 Ulasan"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/_12ssp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearKanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearKiri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linearKiri"
+        app:layout_constraintTop_toTopOf="@id/linearKiri">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:numStars="5"
+                android:rating="1"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:theme="@style/RatingBar"
+                android:stepSize="0.5" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCountRate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_10ssp"
+                tools:text="150" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:numStars="5"
+                android:theme="@style/RatingBar"
+                android:rating="2"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:stepSize="0.5" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCountRate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_10ssp"
+                tools:text="150" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:numStars="5"
+                android:rating="3"
+                android:theme="@style/RatingBar"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:stepSize="0.5" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCountRate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_10ssp"
+                tools:text="150" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:numStars="5"
+                android:rating="4"
+                android:theme="@style/RatingBar"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:stepSize="0.5" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCountRate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_10ssp"
+                tools:text="150" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:numStars="5"
+                android:rating="5"
+                android:theme="@style/RatingBar"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:stepSize="0.5" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCountRate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_10ssp"
+                tools:text="150" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearKiri">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb5Star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:background="@drawable/rb_ulasan"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="@drawable/ic_baseline_star"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="5"
+            android:textColor="@drawable/radio_text_color3"
+            android:textStyle="bold"
+            app:drawableTint="#FFC50B" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb4Star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:background="@drawable/rb_ulasan"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="@drawable/ic_baseline_star"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="4"
+            android:textColor="@drawable/radio_text_color3"
+            android:textStyle="bold"
+            app:drawableTint="#FFC50B" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb3Star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:background="@drawable/rb_ulasan"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="@drawable/ic_baseline_star"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="3"
+            android:textColor="@drawable/radio_text_color3"
+            android:textStyle="bold"
+            app:drawableTint="#FFC50B" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb2Star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:background="@drawable/rb_ulasan"
+            android:button="@null"
+            android:checked="true"
+            android:drawableEnd="@drawable/ic_baseline_star"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="2"
+            android:textColor="@drawable/radio_text_color3"
+            android:textStyle="bold"
+            app:drawableTint="#FFC50B" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb1Star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:background="@drawable/rb_ulasan"
+            android:button="@null"
+            android:checked="false"
+            android:drawableEnd="@drawable/ic_baseline_star"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="1"
+            android:textColor="@drawable/radio_text_color3"
+            android:textStyle="bold"
+            app:drawableTint="#FFC50B" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_solid_dark_purple_tr20"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listUlasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_ulasan" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Tidak ada ulasan lainnya"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_10ssp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

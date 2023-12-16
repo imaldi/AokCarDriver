@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".ui.pendaftaran.LoginVerifikasiActivity">
+
+
+    <View
+        android:id="@+id/bg_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_top_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/ic_login_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageButtonBack"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/black_up_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_top"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/ic_img_login_verifikasi" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Masukkan Kode Verifikasi"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="Kode dikirim melalui SMS ke nomor handphone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNomorHandphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="+6289662483766"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/numone"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_weight="1"
+                android:background="@drawable/et_white_r8"
+                android:ems="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/numtwo"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/et_white_r8"
+                android:ems="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/numthree"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/et_white_r8"
+                android:ems="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/numfour"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/et_white_r8"
+                android:ems="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp" />
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/numfive"-->
+<!--                android:layout_width="@dimen/_35sdp"-->
+<!--                android:layout_height="@dimen/_45sdp"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/et_white_r8"-->
+<!--                android:ems="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_25ssp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/numsix"-->
+<!--                android:layout_width="@dimen/_35sdp"-->
+<!--                android:layout_height="@dimen/_45sdp"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/et_white_r8"-->
+<!--                android:ems="1"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_25ssp" />-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:drawableStart="@drawable/ic_outline_info"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Harap isi kode OTP untuk Verifikasi"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_10ssp"
+            app:drawableTint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonVerifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/btn_purple_r10"
+            android:text="Verifikasi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMohonTunggu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="Mohon tunggu dalam 00 : 30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center"
+                android:text="Tidak Mendapatkan Kode?"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_10ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewKirimUlang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center"
+                android:text="Kirim Ulang"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

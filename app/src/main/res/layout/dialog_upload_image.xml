@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/btn_purple_r10">
+
+    <ImageView
+        android:id="@+id/btnCamera"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="24dp"
+        android:layout_marginStart="36dp"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <ImageView
+        android:id="@+id/btnGallery"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:srcCompat="@drawable/ic_baseline_image_24" />
+</androidx.appcompat.widget.LinearLayoutCompat>

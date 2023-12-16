@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:background="@color/magenta">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewItem"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_31sdp"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCornersImageView8"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNamaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:text="Bebek Goreng"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewItem"
+        app:layout_constraintTop_toTopOf="@+id/imageViewItem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewVarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:text="Varian    : Goreng"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_8ssp"
+        app:drawableStartCompat="@drawable/ic_bulat"
+        app:drawableTint="@color/yellow"
+        app:layout_constraintStart_toStartOf="@+id/textViewNamaItem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamaItem" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:text="Level        : LV 3"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_8ssp"
+        app:drawableStartCompat="@drawable/ic_bulat"
+        app:drawableTint="@color/yellow"
+        app:layout_constraintStart_toStartOf="@+id/textViewNamaItem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVarian" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:text="Catatan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
+        app:drawableStartCompat="@drawable/ic_catatan"
+        app:drawableTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewNamaItem"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCatataan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="169dp"
+        android:background="@drawable/bg_solid_yellow_r4"
+        android:drawablePadding="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:text="Banyakin Sambelnya"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toEndOf="@+id/textView70"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevel" />
+
+    <View
+        android:id="@+id/divider22"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/garis_putus_w"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCatataan" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCountPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:text="X 1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toTopOf="@+id/divider22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCatataan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

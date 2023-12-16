@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@drawable/bg_solid_purple_r8"
+    android:padding="@dimen/_12sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/bg_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Saddam Genta Ramadhan"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_9ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKodePesanan"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewKodePesanan"
+        android:layout_marginVertical="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_textview_dark_purple"
+        android:padding="@dimen/_3sdp"
+        android:text="Kode Pesanan: CEttry1329"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPoint"
+        app:layout_constraintStart_toStartOf="@+id/textViewNama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNama" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dapatkan 50 Point"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_5ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/textViewNama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKodePesanan" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/garis_putus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonCall"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/btn_yellow_r8"
+        android:padding="@dimen/_3sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_telepon"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNama"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonChat" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonChat"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:background="@drawable/btn_yellow_r8"
+        android:padding="@dimen/_3sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_round_chat"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_solid_black_r8"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dibayar:"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_9ssp" />
+
+        <ImageView
+            android:id="@+id/imageTypePayment"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_money"
+            app:tint="@color/red" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/typePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EzzPay"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_9ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textfinalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 28.000"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_9ssp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView6"
+        android:layout_width="@dimen/_18ssp"
+        android:layout_height="@dimen/_18ssp"
+        android:src="@drawable/ic_baseline_location"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView11"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat4"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView9"
+        app:tint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Jemput"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rumah"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Jl. Letnan Tatawinata RT 03/RW 02 No 01A"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView10" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView7"
+        android:layout_width="@dimen/_18ssp"
+        android:layout_height="@dimen/_18ssp"
+        android:src="@drawable/ic_baseline_location"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView14"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat4"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView12"
+        app:tint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Tujuan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView11"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView11" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azhar Muzakki"
+        android:visibility="gone"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView12"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Raflesia No.67 Blok AE"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView13" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@drawable/garis_putus_vy"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView7"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView7"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView6" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/garis_putus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView14" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDetailPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Detail Pesanan"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_9ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutKiriDetailPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/layoutKananDetailPesanan"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetailPesanan">
+
+        <TextView
+            android:id="@+id/textTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekali Jalan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutKananDetailPesanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/divider7"
+        app:layout_constraintStart_toEndOf="@id/layoutKiriDetailPesanan"
+        app:layout_constraintTop_toBottomOf="@id/textViewDetailPesanan">
+
+        <TextView
+            android:id="@+id/textDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rute 1.7km"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/garis_putus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutKiriDetailPesanan" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Tarif Jempoot Motorbike"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_9ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTarifJemput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Rp 20.000"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_9ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat4">
+
+        <TextView
+            android:id="@+id/textTanggalOrderan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Orderan Selesai Hari Kamis tgl 7/10/2021 09.15 WIB"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_8ssp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:text="Berhasil mendapatkan"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_coins_s"
+                android:drawablePadding="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:text="50 Point"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_10ssp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNilai"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_yellow_r15"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:text="Nilai Customer"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="@+id/divider10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView17" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

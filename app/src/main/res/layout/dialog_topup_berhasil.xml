@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_dark_purple_r10"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_111sdp"
+        android:layout_height="@dimen/_73sdp"
+        android:src="@drawable/img_dialog_top_up" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="Selamat Top Up Saldo\nEzzPay kamu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center"
+        android:text="BERHASIL"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:src="@drawable/ic_baseline_check_circle"
+        android:tint="@color/green" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOke"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:background="@drawable/btn_black_r10"
+        android:text="Oke"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

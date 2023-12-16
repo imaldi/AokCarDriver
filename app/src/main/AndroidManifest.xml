@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.surelabsid.mrjempootdriver">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".BaseApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AokCarDriver">
+        <activity
+            android:name=".ui.butuhbantuan.FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orderan.gokidz.GokidzLiveStreamingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orderan.gokidz.GokidzLiveStreamingActivityCopy"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pendaftaran.PengenalanWajahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pendaftaran.JenisTransportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pendaftaran.PendaftaranDiterimaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profil.KebijakanPrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.verifikasikesehatan.UploadBuktiVaksinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.verifikasikesehatan.UploadSuratActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.verifikasikesehatan.UploadSwabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.verifikasikesehatan.VerifikasiKesahatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.topup.TopUpKonfirmasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ewallet.RiwayatPenarikanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ewallet.PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.topup.TopUpSaldoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ewallet.PenarikanSaldoActivity"
+            android:exported="false" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity
+            android:name=".ui.pendaftaran.PilihBankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profil.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profil.DataPribadiActivity"
+            android:exported="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ui.lupapassword.ResetPasswordActivity" />
+        <activity android:name=".ui.lupapassword.LupaPasswordActivity" />
+        <activity android:name=".ui.pendaftaran.LoginVerifikasiActivity" />
+        <activity android:name=".ui.pendaftaran.LoginNoTeleponActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranActivity" />
+        <activity android:name=".ui.pendaftaran.LoginDaftarActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranPetaActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranAlamatActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranUploadKTPActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranFotoKTPActivity" />
+        <activity android:name=".ui.pendaftaran.SwafotoPetunjukActivity" />
+        <activity android:name=".ui.pendaftaran.InformasiBankActivity" />
+        <activity android:name=".ui.pendaftaran.InformasiMotorActivity" />
+        <activity android:name=".ui.pendaftaran.SyaratKetentuanActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranVerifikasiActivity" />
+        <activity android:name=".ui.pendaftaran.SwafotoUploadActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranDitolakActivity" />
+        <activity android:name=".ui.pendaftaran.PendaftaranDitolak2Activity" />
+        <activity android:name=".ui.pendaftaran.IdentifikasiWajah1Activity" />
+        <activity android:name=".ui.pendaftaran.IdentifikasiWajah2Activity" />
+        <activity android:name=".ui.pendaftaran.IdentifikasiWajah3Activity" />
+        <activity android:name=".ui.pendaftaran.IdentifikasiWajah4Activity" />
+        <activity android:name=".ui.pendaftaran.IdentifikasiWajah5Activity" />
+        <activity android:name=".ui.pendaftaranselesai.PendaftaranSelesaiActivity" />
+        <activity android:name=".ui.pendaftaranselesai.BuatPasswordActivity" />
+        <activity android:name=".ui.pendaftaranselesai.BuatPasswordSelesaiActivity" />
+        <activity android:name=".ui.jempootpoin.JempootPoinActivity" />
+        <activity android:name=".ui.jempootpoin.RadeemPoinActivity" />
+        <activity android:name=".ui.butuhbantuan.PusatBantuanActivity" />
+        <activity android:name=".ui.orderan.goceng.GocengHargaPesananActivity" />
+        <activity android:name=".ui.orderan.gopek.GopekAmbilFotoActivity" />
+        <activity android:name=".ui.orderan.gopek.GopekKirimHargaActivity" />
+        <activity android:name=".ui.orderan.gopek.GopekRatingActivity" />
+        <activity android:name=".ui.orderan.gopek.GopekVerifikasiActivity" />
+        <activity android:name=".ui.orderan.goceng.GocengKirimHargaActivity" />
+        <activity android:name=".ui.orderan.goceng.GocengRatingActivity" />
+        <activity android:name=".ui.orderan.gocap.GocapAmbilFotoFingerActivity" />
+        <activity android:name=".ui.notifikasi.NotifikasiActivity" />
+        <activity android:name=".ui.ulasan.UlasanActivity" />
+        <activity android:name=".ui.callandchat.ChatActivity" />
+        <activity android:name=".ui.butuhbantuan.ChatCSActivity" />
+        <activity android:name=".ui.onboarding.OnBoardingActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.topup.TopUpActivity" />
+        <activity android:name=".ui.SplashscreenActivity" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.surelabsid.mrjempootdriver.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face" />
+    </application>
+
+</manifest>

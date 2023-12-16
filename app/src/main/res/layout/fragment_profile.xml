@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".ui.profil.ProfileFragment">
+
+    <View
+        android:id="@+id/bg_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_65sdp"
+        android:background="@drawable/bg_top_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:src="@drawable/bg_beranda"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <ProgressBar
+        android:id="@+id/progressBarImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:src="@drawable/bg_beranda"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView"
+        app:layout_constraintTop_toTopOf="@+id/bg_top">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNamaUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saddam Genta Ramadhan"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saddamgr21@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID : 1005202113"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_11ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_65sdp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:paddingTop="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_top">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEditProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Edit Profil"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewUlasanCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_chat"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Ulasan Customer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewVerifikasiKesehatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_healthy_heart"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Verifikasi Kesehatan Partner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewJPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_jpoin"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="EzzPoint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNotifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_notif2"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Notifikasi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:text="Tentang Kami"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_policy"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Kebijakan Privacy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewSyaratKetentuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_syarat"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="Syarat Dan Ketentuan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBagikan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_share"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Bagikan AokCar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_rating"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Berikan Rating"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBantuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_help"
+                android:drawableEnd="@drawable/ic_baseline_navigate_next"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Butuh Bantuan?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:drawableTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonKeluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/btn_white_r15"
+                android:drawableStart="@drawable/ic_exit"
+                android:drawablePadding="@dimen/_12sdp"
+                android:drawableTint="@color/main_bg"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:text="Keluar"
+                android:textAllCaps="false"
+                android:textColor="@color/main_bg" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:drawableStart="@drawable/ic_exit"
+                android:drawablePadding="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:visibility="gone" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

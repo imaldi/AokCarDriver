@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@drawable/bg_solid_purple_r8"
+    android:padding="@dimen/_12sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/bg_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Meida Dwi"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKodePesanan"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewKodePesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:background="@drawable/bg_textview_dark_purple"
+        android:padding="@dimen/_3sdp"
+        android:text="Kode Pesanan: CEttry1329"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPoint"
+        app:layout_constraintStart_toStartOf="@+id/textViewNama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNama" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dapatkan 50 Point"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_5ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/textViewNama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKodePesanan" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/garis_putus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonCall"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:background="@drawable/btn_yellow_r8"
+        android:padding="@dimen/_3sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_telepon"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNama"
+        app:layout_constraintStart_toEndOf="@+id/textViewNama" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonChat"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:background="@drawable/btn_yellow_r8"
+        android:padding="@dimen/_3sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_round_chat"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNama"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonCall" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/btn_yellow_r10"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_go_pek"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_solid_black_r8"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dibayar:"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:id="@+id/imageTypePayment"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_money"
+            app:tint="@color/red" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/typePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EzzPay"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_10ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/finalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 28.000"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_10ssp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView6"
+        android:layout_width="@dimen/_18ssp"
+        android:layout_height="@dimen/_18ssp"
+        android:src="@drawable/ic_shop"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView11"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat4"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Restoran"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebek Goreng Hj. Slamet"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Jl. Air Mancur No.34 Dekat GOR Padjajaran"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView10" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView7"
+        android:layout_width="@dimen/_18ssp"
+        android:layout_height="@dimen/_18ssp"
+        android:src="@drawable/ic_house"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView14"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat4"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Dikirim ke"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView11"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView11" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saddam Genta Ramadhan"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView12"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView12" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Air Mancur No.34 Dekat GOR Padjajaran"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView9"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView13" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@drawable/garis_putus_vy"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView7"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView7"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView6"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView6" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/garis_putus_y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView14" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textVie17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Detail Pesanan"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/divider7"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/textVie17" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pesanan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView16"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView16" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@drawable/bg_textview_white"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:text="1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@drawable/garis_putus_w"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView16" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutKiri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/layoutKanan"
+        app:layout_constraintStart_toStartOf="@+id/divider9"
+        app:layout_constraintTop_toBottomOf="@+id/divider9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Platform"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ongkos Kirim"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_discount"
+            android:text="Voucher Discount"
+            android:textColor="@color/yellow_dark"
+            android:textSize="@dimen/_10ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutKanan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/divider9"
+        app:layout_constraintStart_toEndOf="@id/layoutKiri"
+        app:layout_constraintTop_toBottomOf="@+id/divider9">
+
+        <TextView
+            android:id="@+id/textBiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/textBiayaPlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/textBiayaOngkir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/textDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.0000"
+            android:textColor="@color/yellow_dark"
+            android:textSize="@dimen/_10ssp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@drawable/garis_putus_w"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutKiri" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pembayaran"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView18"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView18" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:text="Rp28.000"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/buttonNavigation"
+        android:layout_width="@dimen/_25ssp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/btn_white_r10"
+        android:src="@drawable/ic_baseline_navigation"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_11ssp"
+        android:tint="@color/primary_color"
+        app:layout_constraintEnd_toStartOf="@id/buttonProcess"
+        app:layout_constraintStart_toStartOf="@+id/appCompatTextView17"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView17" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonProcess"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_yellow_r10"
+        android:text="Saya Sudah di Restoran"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@+id/divider10"
+        app:layout_constraintStart_toEndOf="@+id/buttonNavigation"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView17" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".ui.pendaftaran.PendaftaranDitolak2Activity">
+
+    <View
+        android:id="@+id/bg_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/bg_top_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/btn_yellow_r15"
+        android:src="@drawable/ic_back_red"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintStart_toStartOf="@+id/bg_top"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="Pendaftaran Partner"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/bg_top" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="start"
+        android:text="Kami menginformasikan kepada Anda bahwa beberapa dokumen belum sesuai petunjuk, silahkan menghubungi support@mrjempoot.com untuk pengiriman ulang."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:drawableStart="@drawable/ic_baseline_cancel"
+        android:drawablePadding="@dimen/_12sdp"
+        android:text="Foto identitas yang Anda upload blur/goyang/tidak jelas. Mohon lampirkan kembali foto Identitas yang jelas, tidak blur, dan gambar tidak terpotong"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_11ssp"
+        app:drawableTint="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="@id/textView1"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:drawableStart="@drawable/ic_baseline_cancel"
+        android:drawablePadding="@dimen/_12sdp"
+        android:text="Foto Buku Rekening bank tidak terdeteksi oleh sistem karena dokumen yang di upload tidak jelas/blur/terpotong. Mohon lampirkan kembali dengan jelas, tidak blur, dan gambar tidak terpotong. Pastikan buku rekeking yang di upload atas nama pendaftar"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_11ssp"
+        app:drawableTint="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:drawableStart="@drawable/ic_baseline_cancel"
+        android:drawablePadding="@dimen/_12sdp"
+        android:text="Foto Buku Rekening bank tidak terdeteksi oleh sistem karena dokumen yang di upload tidak jelas/blur/terpotong. Mohon lampirkan kembali dengan jelas, tidak blur, dan gambar tidak terpotong. Pastikan buku rekeking yang di upload atas nama pendaftar"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/_11ssp"
+        app:drawableTint="@color/primary_color"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/textView3"
+        app:layout_constraintStart_toStartOf="@id/textView3"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+
+    <View
+        android:id="@+id/imgBot"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/bottom_background_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

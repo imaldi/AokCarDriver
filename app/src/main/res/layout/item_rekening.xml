@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_r10"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:padding="@dimen/_8sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/namaBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank BCA (Cabang Bogor)"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/namaRek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6745564356 - Saddam Genta Ramadhan"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_11ssp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

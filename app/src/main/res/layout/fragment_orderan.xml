@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listBankShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+            <include layout="@layout/item_service_shimmer" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:padding="@dimen/_8sdp"
+        tools:listitem="@layout/item_service"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@drawable/bg_top_black_orderan"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOrderanMasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="@dimen/_2sdp"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="Orderan Masuk"
+            android:textColor="@drawable/radio_text_color2"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:background="@color/yellow" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOrderanDiterima"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:button="@null"
+            android:drawablePadding="@dimen/_2sdp"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="Orderan Diterima"
+            android:textColor="@drawable/radio_text_color2"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:background="@color/yellow" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbRiwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:button="@null"
+            android:drawablePadding="@dimen/_2sdp"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="Riwayat"
+            android:textColor="@drawable/radio_text_color2"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/listOrderanShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+            <include layout="@layout/item_orderan_gopek_masuk_shimmer" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOrderan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_orderan_gopek_masuk"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

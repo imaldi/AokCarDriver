@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_krem_r15"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/sad" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="Sayang sekali orderan ini\nharus ditolak"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="Silahkan pilih alasan orderan ditolak"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:text="Customer tidak dapat dihubungi" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:text="Alasan lain" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:text="Lokasi penjemputan terlalu jauh" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:text="Saya tidak bisa menyelesaikan order ini" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:text="Lainnya" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/textLainnya"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:background="@drawable/bg_outline_grayred_r8"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonKirim"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:background="@drawable/btn_purple_r10"
+        android:text="Kirim"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_15sdp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

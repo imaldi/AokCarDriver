@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">AokCar Driver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="client_key_midtrans">SB-Mid-client-4NMg1NxAInK28Vyn</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="agora_app_id">6e030b5dbcf740d6bfc307e61f98e4e1</string>
+    <string name="agora_app_token">0066e030b5dbcf740d6bfc307e61f98e4e1IABN37kerOaPvlI3DbbH5P04YU6Esa5naRTVoo1PN0k8RoX5hoIAAAAAEACf/BrpMw5uYgEAAQAzDm5i</string>
+
+    <string name="no_internet_access">No internet Access</string>
+    <string name="retry">Retry</string>
+    <string name="phone_empty">Phone tidak boleh kosong!</string>
+    <string name="name_empty">Nama tidak boleh kosong!</string>
+    <string name="photo_profile_empty">Foto tidak boleh kosong!</string>
+    <string name="photo_bank_empty">Upload buku rekening bank!</string>
+    <string name="bank_name_empty">Nama bank tidak boleh kosong!</string>
+    <string name="bank_rekening_empty">No Rekening bank tidak boleh kosong!</string>
+    <string name="bank_account_name_empty">Nama penerima tidak boleh kosong!</string>
+    <string name="error_writing_bitmap">Error writing bitmap</string>
+    <string name="label_upload_foto_selfie">Upload foto Selfie dengan KTP</string>
+    <string name="label_review_foto_selfie">Review foto Selfie dengan KTP</string>
+    <string name="password_empty">Password tidak boleh kosong!</string>
+    <string name="email_empty">Email tidak boleh kosong!</string>
+    <string name="nominal_empty">Nominal tidak boleh kosong!</string>
+    <string name="reject_reason_empty">Alasan tolak orderan tidak boleh kosong!</string>
+    <string name="restoran">Restoran</string>
+    <string name="jemput">Jemput</string>
+    <string name="rumah">Rumah</string>
+    <string name="dikirim_ke">Dikirim ke</string>
+    <string name="tujuan">Tujuan</string>
+    <string name="total_pembayaran">Total Pembayaran</string>
+    <string name="tarif_jempoot_motorbike">Tarif AokCar Motorbike</string>
+    <string name="selamat_pagi">Selamat Pagi</string>
+    <string name="selamat_siang">Selamat Siang</string>
+    <string name="selamat_sore">Selamat Sore</string>
+    <string name="selamat_malam">Selamat Malam</string>
+    <string name="date_range_empty">Pilih tanggal mulai dan tangal sampai</string>
+    <string name="aktif">Aktif</string>
+    <string name="tidak_aktif">Tidak Aktif</string>
+    <string name="plat_nomor_empty">Plat nomor tidak boleh kosong!</string>
+    <string name="warna_kendaraan_empty">Warna kendaraan tidak boleh kosong!</string>
+    <string name="merk_kendaraan_empty">Merk kendaraan tidak boleh kosong!</string>
+    <string name="no_sim_empty">Nomor SIM tidak boleh kosong!</string>
+    <string name="document_sim_empty">Silahkan upload SIM anda!</string>
+    <string name="document_stnk_empty">Silahkan upload STNK anda!</string>
+    <string name="document_ktp_empty">Silahkan upload KTP anda!</string>
+    <string name="nama_ktp_empty">Nama KTP tidak boleh kosong!</string>
+    <string name="no_ktp_empty">No KTP tidak boleh kosong!</string>
+    <string name="maaf_tidak_ada_data">Maaf Tidak ada data</string>
+    <string name="password_not_macth">Password not match</string>
+    <string name="simpan">Simpan</string>
+    <string name="nominal_lebih">Nominal tarik melebihi saldo</string>
+    <string name="poin_not_enough">Poin anda tidak cukup</string>
+    <string name="accept_order">Orderan diterima</string>
+    <string name="menuju_lokasi_penjemputan">Menuju Lokasi Penjemputan</string>
+    <string name="saya_sudah_di_restoran">Saya Sudah di Restoran</string>
+    <string name="orderan_sudah_di_pesan">Orderan Sudah di Pesan</string>
+    <string name="udah_jemput_paket">Udah Jemput Paket</string>
+    <string name="paket_sedang_dalam_perjalanan">Paket Sedang Dalam Perjalanan</string>
+    <string name="paket_sudah_tiba_ditujuan">Paket Sudah Tiba Ditujuan</string>
+    <string name="selesai_antar_paket">Selesai Antar Paket</string>
+    <string name="ambil_foto_dan_finger">Ambil Foto</string>
+    <string name="bayar_ke_merchant">Bayar Ke Merchant</string>
+    <string name="kirim_struk_ke_customer">Kirim Struk ke Customer</string>
+    <string name="pesanan_sedang_diantar">Pesanan Sedang Diantar</string>
+    <string name="pesanan_sudah_diantar">Pesanan Sudah Diantar</string>
+    <string name="sudah_sama_customer">Sudah Sama Customer</string>
+    <string name="sedang_dalam_perjalanan">Sedang Dalam Perjalanan</string>
+    <string name="menuju_tempat_tujuan">Menuju Tempat Tujuan</string>
+    <string name="selesai_antar_tujuan">Selesai Antar Ke Tujuan</string>
+    <string name="bayar_mr_jempoot">Bayar ke AokCar</string>
+    <string name="tagih_customer">Tagih Cash ke Customer</string>
+    <string name="document_vaksin_empty">Document Vaksin tidak boleh kosong!</string>
+    <string name="document_swab_empty">Document Swab tidak boleh kosong!</string>
+    <string name="document_bebas_covid_empty">Document Bebas Covid tidak boleh kosong!</string>
+    <string name="struk_empty">Struk tidak boleh kosong!</string>
+    <string name="harap_masukkan_total_pesanan_yang_ada_di_struk_belanja">Harap masukkan total pesanan yang ada\ndi struk belanja</string>
+    <string name="harap_masukkan_total_biaya_platform">Harap masukkan total biaya platform\nUntuk dikirim ke AokCar</string>
+    <string name="total_harga_pembelanjaan">Total Harga Pembelanjaan</string>
+    <string name="konfirmasi_total_harga_pembelanjaan">Konfirmasi Total Harga Pembelanjaan</string>
+    <string name="total_biaya_platform">Total Biaya Platform</string>
+    <string name="konfirmasi_total_biaya_platform">Konfirmasi Total Biaya Platform</string>
+    <string name="kirim_ke_merchant">Kirim ke Merchant</string>
+    <string name="kirim_ke_mr_jempoot">Kirim ke AokCar</string>
+    <string name="konfirmasi_pembelanjaan_invalid">Konfirmasi Pembelanjaan tidak valid</string>
+    <string name="total_bayar_invalid">Total bayar anda tidak sesuai</string>
+    <string name="konfirmasi_biaya_invalid">Konfirmasi Biaya tidak valid</string>
+    <string name="pin_invalid">PIN tidak valid</string>
+    <string name="selesaikan_pembayaran">Selesaikan Pembayaran</string>
+    <string name="pulang_pergi">Pulang Pergi</string>
+    <string name="jemput_lagi_customer">Jemput Lagi Customer</string>
+    <string name="kendaraan_sepeda_motor">Khusus untuk layanan Sepeda Motor (Gopek, Goceng, Gokidz, dan Gocap)</string>
+    <string name="kendaraan_new_selis">Khusus untuk layanan New Selis Balis Tiga Roda (GoBan VIP)</string>
+    <string name="informasi_kendaraan">Informasi Kendaraan</string>
+    <string name="informasi_driver">Informasi Driver</string>
+    <string name="face_not_found">Wajah tidak dikenali</string>
+    <string name="choose_image">Pilih gambar</string>
+    <string name="app_version">V112021</string>
+    <string name="kata_kata_top_up"><font bgcolor = "#FFCC00" bgpadding="4dp" radius = "3dp" color = "#000000">Top up</font> Sekarang juga! EzzPay kamu</string>
+    <string name="kirim_ke_AokCar">Kirim ke AokCar</string>
+
+    <string-array name="gender">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="relation">
+        <item>Orang Tua</item>
+        <item>Anak</item>
+        <item>Kakak Adik</item>
+        <item>Saudara Lainnya</item>
+        <item>Teman</item>
+        <item>Kolega/rekan kerja</item>
+        <item>Pasangan</item>
+    </string-array>
+</resources>
